@@ -3,8 +3,10 @@
 **/
 
 angular.module('EmailApp')
-    .controller('inboxCtrl',
-                function InboxCtrl ( ){
-                    'use strict';
-                    console.log('Inbox Loaded!')
+    .controller('InboxCtrl',
+        function InboxCtrl ($scope) {
+            'use strict';
+                $scope.meta = {
+                    title: "My inbox"
+                };
 });
