@@ -29,6 +29,7 @@ angular.module('EmailApp')
         .error(function (data) {
             deferred.reject(data);
         });
-        
+        return deferred.promise;
+    };
         return exports;
     });
